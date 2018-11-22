@@ -34,16 +34,16 @@
 
         xhr.addEventListener("readystatechange", function () {
           if (this.readyState === 4) {
-              
+
             console.log(this.responseText);
 
           }
         });
 
-        xhr.open("GET", "http://127.0.0.1:5000/items");
+        xhr.open("GET", "https://my-own-api.herokuapp.com");
         xhr.setRequestHeader("Content-Type", "application/json");
-        xhr.setRequestHeader("cache-control", "no-cache");
-        xhr.setRequestHeader("Postman-Token", "ff6ed4bf-3260-488b-b4a4-b5ee47954caa");
+        // xhr.setRequestHeader("cache-control", "no-cache");
+        // xhr.setRequestHeader("Postman-Token", "ff6ed4bf-3260-488b-b4a4-b5ee47954caa");
 
         xhr.send(data);
 
