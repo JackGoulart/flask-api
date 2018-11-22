@@ -30,4 +30,4 @@ class UserRegister(Resource):
 
 class UserList(Resource):
     def get(self):
-        return {'Users': [store.json() for store in UserModel.query.all()]}
+        return {'Users': [user.json() for user in UserModel.query.all()]}
