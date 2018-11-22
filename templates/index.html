@@ -26,26 +26,6 @@
         xhr.setRequestHeader("Content-Type", "application/json");
 
         xhr.send(data);
-        // ------------------------------------------------------------------------------------
-        var data = null;
-
-        var xhr = new XMLHttpRequest();
-        xhr.withCredentials = true;
-
-        xhr.addEventListener("readystatechange", function () {
-          if (this.readyState === 4) {
-
-            console.log(this.responseText);
-
-          }
-        });
-
-        xhr.open("GET", "https://my-own-api.herokuapp.com");
-        xhr.setRequestHeader("Content-Type", "application/json");
-        // xhr.setRequestHeader("cache-control", "no-cache");
-        // xhr.setRequestHeader("Postman-Token", "ff6ed4bf-3260-488b-b4a4-b5ee47954caa");
-
-        xhr.send(data);
 
     </script>
 </html>
