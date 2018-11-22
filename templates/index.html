@@ -4,17 +4,26 @@
     </head>
     <body>
         <h1>access_token</h1>
+
+        <input id="name" type="text" size="7" name="Name" value="">
+        <br>
+        <input id="password" type="password" size="7" name="password" value="">
+        <br>
+        <button type="button" onclick = "login()" name="login">login</button>
+
+
         <p id='p1'></p>
-        <p>Olá Jonathan</p>
-        <p>Will will you go?</p>
 
     </body>
     <script type="text/javascript">
-        var data = JSON.stringify({
-        "username": "jackson",
-        "password": "asdf"
-        });
 
+       function login(){
+
+        var data = JSON.stringify({
+        "username": document.getElementById('name').value,
+        "password": document.getElementById('password').value
+        });
+        
         var xhr = new XMLHttpRequest();
         xhr.withCredentials = true;
 
@@ -29,6 +38,6 @@
         xhr.setRequestHeader("Content-Type", "application/json");
 
         xhr.send(data);
-
+      };
     </script>
 </html>
