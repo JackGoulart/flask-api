@@ -25,8 +25,8 @@
   xhr.addEventListener("readystatechange", function () {
     if (this.readyState === 4) {
       console.log(this.responseText);
-
-      for (var i =0; i <  this.responseText['items'].lenght; i++){
+      var
+      for (var i =0; i <  JSON.parse(this.responseText)['items'].lenght; i++){
          var  container = document.getElementById('listofobject')
          var newelement = document.createElement('p')
          var node = document.createTextNode("name: "+i)
