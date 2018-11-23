@@ -21,9 +21,9 @@ jwt = JWT(app, authenticate, identity) #/auth
 def home():
     return render_template('index.html')
 
-# @pp.route('/listofobject')
-# def listofobject():
-#     return render_template('listofobject.html')
+@pp.route('/listofobject')
+def objectlist():
+    return render_template('listofobject.html')
 
 api.add_resource(Item, '/item/<string:name>')
 api.add_resource(ItemList, '/items')
