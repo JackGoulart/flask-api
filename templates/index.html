@@ -33,7 +33,7 @@
         if (JSON.parse(this.responseText)['access_token']) {
           console.log(this.responseText);
           // document.getElementById('p1').innerHTML = JSON.parse(this.responseText)['access_token']
-          window.open("templates/listofobject.html");
+          window.open("https://my-own-api.herokuapp.com/listofobject");
         } else {
           console.log(this.responseText);
           document.getElementById('p1').innerHTML = JSON.parse(this.responseText)['description']
