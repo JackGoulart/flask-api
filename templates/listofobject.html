@@ -14,13 +14,6 @@
   </div>
 </body>
 <script type="text/javascript">
-  var xhr = new XMLHttpRequest();
-
-  xhr.addEventListener("readystatechange", function() {
-    if (this.readyState === 4) {
-      var container = document.getElementById('listofobject');
-
-      console.log(this.responseText);
       // for (i in this.responseText['items']){
       //
       //  var newelement = document.createElement('p')
@@ -28,12 +21,25 @@
       //  newelement.appendChild(node)
       //  container.appendChild(newelement)
       // }
+
+
+  var data = null;
+
+  var xhr = new XMLHttpRequest();
+  xhr.withCredentials = true;
+
+  xhr.addEventListener("readystatechange", function () {
+    if (this.readyState === 4) {
+      console.log(this.responseText);
     }
   });
 
-
   xhr.open("GET", "https://my-own-api.herokuapp.com/items");
   xhr.setRequestHeader("Content-Type", "application/json");
+
+
+  xhr.send(data);
+
 </script>
 
 </html>
