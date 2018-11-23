@@ -29,13 +29,14 @@
 
       for (var i =0; i < arr.length  ; i++){
           var  container = document.getElementById('listofobject')
-          var newelement = document.createElement('p')
-          var node = document.createTextNode("name: "+arr[i]['name'])
-          var newelement = document.createElement('p')
-          var node = document.createTextNode("Price: "+arr[i]['price'])
-          newelement.appendChild(node)
-          container.appendChild(newelement)
-
+          var elementname = document.createElement('p')
+          var nodename = document.createTextNode("name: "+arr[i]['name'])
+          newelement.appendChild(nodename)
+          container.appendChild(elementname)
+          var elementprice = document.createElement('p')
+          var nodeprice = document.createTextNode("Price: "+arr[i]['price'])
+          newelement.appendChild(nodeprice)
+          container.appendChild(elementprice)
       }
        console.log(arr);
     }
