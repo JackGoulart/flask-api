@@ -22,7 +22,7 @@
       var container = document.getElementById('listofobject');
 
       console.log(this.responseText);
-      for i in (this.responseText['items']){
+      for (i in this.responseText['items']){
        var newelement = document.createElement('p')
        var node = document.createTextNode("name: "+this.responseText['items'][0]['name'])
        newelement.appendChild(node)
