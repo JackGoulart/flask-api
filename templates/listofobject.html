@@ -24,14 +24,15 @@
 
   xhr.addEventListener("readystatechange", function () {
     if (this.readyState === 4) {
-      console.log(this.responseText);
-    
+
+
       for (var i =0; i <  JSON.parse(this.responseText)['items'].lenght; i++){
          var  container = document.getElementById('listofobject')
          var newelement = document.createElement('p')
          var node = document.createTextNode("name: "+i)
          newelement.appendChild(node)
          container.appendChild(newelement)
+           console.log(this.responseText);
       }
     }
   });
