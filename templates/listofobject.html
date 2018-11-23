@@ -31,11 +31,11 @@
           var  container = document.getElementById('listofobject')
           var elementname = document.createElement('p')
           var nodename = document.createTextNode("name: "+arr[i]['name'])
-          newelement.appendChild(nodename)
+          elementname.appendChild(nodename)
           container.appendChild(elementname)
           var elementprice = document.createElement('p')
           var nodeprice = document.createTextNode("Price: "+arr[i]['price'])
-          newelement.appendChild(nodeprice)
+          elementprice.appendChild(nodeprice)
           container.appendChild(elementprice)
       }
        console.log(arr);
