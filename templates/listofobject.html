@@ -14,13 +14,7 @@
   </div>
 </body>
 <script type="text/javascript">
-      // for (i in this.responseText['items']){
-      //
-      //  var newelement = document.createElement('p')
-      //  var node = document.createTextNode("name: "+i)
-      //  newelement.appendChild(node)
-      //  container.appendChild(newelement)
-      // }
+
 
 
   var data = null;
@@ -31,6 +25,13 @@
   xhr.addEventListener("readystatechange", function () {
     if (this.readyState === 4) {
       console.log(this.responseText);
+      for (i in this.responseText['items']){
+      
+       var newelement = document.createElement('p')
+       var node = document.createTextNode("name: "+i)
+       newelement.appendChild(node)
+       container.appendChild(newelement)
+      }
     }
   });
 
