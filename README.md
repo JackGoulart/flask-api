@@ -1,4 +1,4 @@
-#  Flask rest-api with Flask-RESTful exetension:
+#  Flask rest-api with Flask-RESTful extension: 
 
 ## That api was developed by a course that I did on udemy: 
 
