@@ -1,6 +1,7 @@
 #  Flask rest-api with Flask-RESTful extension: 
 
-## That api was developed by a course that I did on udemy: 
+That api was developed through a course that I did on udemy: 
 
-### I added a webapp SPA served over that Api to test when I used JS/ajax.  
+I added a web app SPA served over that Api to test the endpoints.
+I used JS/ajax/XMLHttpRequest to send resquest.   
    
